@@ -3,16 +3,16 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = 'docker-hub' // Jenkins credentials ID for DockerHub
-        IMAGE_NAME = 'myimage01'
+        IMAGE_NAME = 'azodha01'
         IMAGE_TAG = '1'
-        DOCKERHUB_REPO = 'nikhil9823/myimage01'
+        DOCKERHUB_REPO = 'nikhil9823/azodha01'
     }
 
     stages {
 
         stage('Checkout Repo') {
             steps {
-                git url: 'https://github.com/nikhil17-ng/Jenkins-python-Docker-demo', branch: 'master'
+                git url: 'https://github.com/nikhil17-ng/Azodha-Proj.git', branch: 'main'
             }
         }
 
